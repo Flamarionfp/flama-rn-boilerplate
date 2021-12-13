@@ -1,11 +1,9 @@
 import React from 'react'
-import { View, Text } from 'react-native'
+import Navigation from '../src/navigation/index'
 
 const App = () => {
   return (
-    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-      <Text style={{ fontSize: 18, fontWeight: 'bold' }}>Hello World!</Text>
-    </View>
+    <Navigation />
   )
 }
 
