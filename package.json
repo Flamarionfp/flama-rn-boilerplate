@@ -7,7 +7,12 @@
     "ios": "react-native run-ios",
     "start": "react-native start",
     "test": "jest",
-    "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "build": "npm install --save-dev",
+    "android:clean": "cd android && gradlew clean",
+    "android:cleanRun": "cd android && /gradlew clean && cd .. && npx react-native run-android",
+    "android:bundle": "cd android && gradlew bundleRelease",
+    "android:build": "cd android && gradlew assembleRelease"
   },
   "dependencies": {
     "@react-navigation/bottom-tabs": "^6.0.9",
