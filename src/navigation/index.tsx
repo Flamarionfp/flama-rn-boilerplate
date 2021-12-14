@@ -4,8 +4,8 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { createDrawerNavigator } from '@react-navigation/drawer';
 
-import Home from '../screens/Home'
-import Test from '../screens/Test'
+import Home from "@screens/Home"
+import Test from "@screens/Test"
 
 import StackProps from '../types/StackProps'
 import TabProps from '../types/TabProps'
