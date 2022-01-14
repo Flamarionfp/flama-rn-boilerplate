@@ -31,7 +31,6 @@ const userSlice = createSlice({
   },
 });
 
-export const { userRequestPending, userRequestError, userRequestSuccess } =
-  userSlice.actions;
+export const { userRequestPending, userRequestError, userRequestSuccess } = userSlice.actions;
 
 export default userSlice.reducer;
