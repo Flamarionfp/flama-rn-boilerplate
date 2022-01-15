@@ -1,12 +1,11 @@
 import React from 'react';
-import { Text } from 'react-native';
-import { Container } from './styles';
+import { View, Text } from 'react-native';
 
 const Signup: React.FC = () => {
   return (
-    <Container>
+    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
       <Text>Hello Signup</Text>
-    </Container>
+    </View>
   );
 };
 export default Signup;
