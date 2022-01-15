@@ -1,11 +1,11 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import { Flex, Text } from 'native-base';
 
 const Signup: React.FC = () => {
   return (
-    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+    <Flex flex={1} align="center" justify="center">
       <Text>Hello Signup</Text>
-    </View>
+    </Flex>
   );
 };
 export default Signup;

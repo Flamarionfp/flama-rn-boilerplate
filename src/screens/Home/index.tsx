@@ -1,14 +1,15 @@
 import React from 'react';
-import { View, TouchableOpacity, Text } from 'react-native';
+import { Flex, Pressable, Text } from 'native-base';
+
 import { HomeProps } from './Home.types';
 
 const Home: React.FC<HomeProps> = ({ navigation }) => {
   return (
-    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-      <TouchableOpacity onPress={() => navigation.navigate('Signup')}>
+    <Flex flex={1} align="center" justify="center">
+      <Pressable onPress={() => navigation.navigate('Signup')}>
         <Text>Ir para Signup</Text>
-      </TouchableOpacity>
-    </View>
+      </Pressable>
+    </Flex>
   );
 };
 export default Home;
