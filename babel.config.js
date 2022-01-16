@@ -8,9 +8,13 @@ module.exports = {
         root: ['./src'],
         extensions: ['.ts', '.tsx', '.jsx', '.js', '.json'],
         alias: {
+          '@images': './src/assets/images',
           '@components': './src/components',
+          '@constants': './src/constants',
+          '@redux': './src/redux',
           '@screens': './src/screens',
           '@services': './src/services',
+          '@utils': './src/utils',
         },
       },
     ],
