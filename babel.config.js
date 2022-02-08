@@ -11,7 +11,6 @@ module.exports = {
           '@images': './src/assets/images',
           '@components': './src/components',
           '@constants': './src/constants',
-          '@redux': './src/redux',
           '@screens': './src/screens',
           '@services': './src/services',
           '@utils': './src/utils',

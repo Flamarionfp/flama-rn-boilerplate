@@ -1,6 +1,6 @@
 type StackProps = {
   Home: undefined;
-  Signup: undefined;
+  Signin: undefined;
 };
 
 export default StackProps;

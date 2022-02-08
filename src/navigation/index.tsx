@@ -5,7 +5,7 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { createDrawerNavigator } from '@react-navigation/drawer';
 
 import Home from '@screens/Home';
-import Signup from '@screens/Signup';
+import Signin from '@screens/Signin';
 
 import StackProps from './Stack.types';
 import TabProps from './Tab.types';
@@ -36,7 +36,7 @@ const Navigation: React.FC = () => {
     <NavigationContainer>
       <Stack.Navigator initialRouteName="Home">
         <Stack.Screen name="Home" component={DrawerLeft} options={{ headerShown: false }} />
-        <Stack.Screen name="Signup" component={Signup} options={{ headerShown: false }} />
+        <Stack.Screen name="Signin" component={Signin} options={{ headerShown: false }} />
       </Stack.Navigator>
     </NavigationContainer>
   );
