@@ -12,8 +12,8 @@ export function signIn(): Promise<Response> {
       resolve({
         token: 'fewjufhwuefewf45f6e4w5f64e',
         user: {
-          name: 'Flamarion',
-          email: 'flama@fakeemail.com',
+          name: 'username',
+          email: 'email@fakeemail.com',
         },
       });
     }, 2000);
