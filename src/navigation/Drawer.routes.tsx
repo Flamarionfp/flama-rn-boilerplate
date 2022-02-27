@@ -3,14 +3,14 @@ import { createDrawerNavigator } from '@react-navigation/drawer';
 import Home from '@screens/Home';
 import DrawerProps from './Drawer.types.';
 
-const Drawer = createDrawerNavigator<DrawerProps>();
+const NavigationDrawer = createDrawerNavigator<DrawerProps>();
 
-const DrawerLeft: React.FC = () => {
+const Drawer: React.FC = () => {
   return (
-    <Drawer.Navigator>
-      <Drawer.Screen name="Home" component={Home} />
-    </Drawer.Navigator>
+    <NavigationDrawer.Navigator>
+      <NavigationDrawer.Screen name="Home" component={Home} options={{ headerShown: false }} />
+    </NavigationDrawer.Navigator>
   );
 };
 
-export default DrawerLeft;
+export default Drawer;

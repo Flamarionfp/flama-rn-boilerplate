@@ -8,7 +8,7 @@ const Tab = createBottomTabNavigator<TabBarProps>();
 const TabBar: React.FC = () => {
   return (
     <Tab.Navigator>
-      <Tab.Screen name="Home" component={Home} />
+      <Tab.Screen name="Home" component={Home} options={{ headerShown: false }} />
     </Tab.Navigator>
   );
 };

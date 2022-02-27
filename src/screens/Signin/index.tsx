@@ -1,20 +1,30 @@
-import React from 'react';
-import { Flex, Text, Button } from 'native-base';
+import React, { useState, useCallback } from 'react';
+import { Flex, Box, Heading, Button } from 'native-base';
+import { Screen } from '@components/Screen/Screen';
 import { useAuth } from '../../hooks/useAuth';
 
-const Signin: React.FC = () => {
+export const Signin: React.FC = () => {
   const { signIn } = useAuth();
+  const [isLoading, setIsLoading] = useState(false);
 
-  function handleSignin() {
-    signIn();
-  }
+  const handleSignin = useCallback(() => {
+    setIsLoading(true);
+    signIn().then(() => {
+      setIsLoading(false);
+    });
+  }, [isLoading]);
 
   return (
-    <Flex flex={1} align="center" justify="center">
-      <Button onPress={() => handleSignin()}>
-        <Text color="white">Fazer Login</Text>
-      </Button>
-    </Flex>
+    <Screen>
+      <Flex mt="20">
+        <Heading>Login</Heading>
+        <Box mt="20">
+          <Button isLoading={isLoading} onPress={handleSignin}>
+            Entrar
+          </Button>
+        </Box>
+      </Flex>
+    </Screen>
   );
 };
 

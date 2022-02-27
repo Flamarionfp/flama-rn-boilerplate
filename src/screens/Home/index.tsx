@@ -1,6 +1,6 @@
-/* eslint-disable react/jsx-no-bind */
 import React from 'react';
-import { Flex, Text, Button } from 'native-base';
+import { Flex, Box, Heading, Button } from 'native-base';
+import { Screen } from '@components/Screen/Screen';
 import { useAuth } from '../../hooks/useAuth';
 
 const Home: React.FC = () => {
@@ -11,11 +11,14 @@ const Home: React.FC = () => {
   }
 
   return (
-    <Flex flex={1} align="center" justify="center">
-      <Button onPress={handleSignout}>
-        <Text color="white">Sair</Text>
-      </Button>
-    </Flex>
+    <Screen>
+      <Flex mt="20">
+        <Heading>Bem vindo!</Heading>
+        <Box mt="20">
+          <Button onPress={handleSignout}>Sair</Button>
+        </Box>
+      </Flex>
+    </Screen>
   );
 };
 

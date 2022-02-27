@@ -9,7 +9,7 @@ const AuthStack = createNativeStackNavigator();
 const AuthRoutes: React.FC = () => (
   <NavigationContainer>
     <AuthStack.Navigator>
-      <AuthStack.Screen name="Signin" component={Signin} />
+      <AuthStack.Screen name="Signin" component={Signin} options={{ headerShown: false }} />
     </AuthStack.Navigator>
   </NavigationContainer>
 );
