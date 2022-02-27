@@ -1,7 +1,6 @@
-# OSX
 #
 .DS_Store
-
+.vscode
 # Xcode
 #
 build/
@@ -23,6 +22,8 @@ DerivedData
 
 # Android/IntelliJ
 #
+ios/
+android/
 build/
 .idea
 .gradle
@@ -41,13 +42,6 @@ buck-out/
 \.buckd/
 *.keystore
 !debug.keystore
-
-# fastlane
-#
-# It is recommended to not store the screenshots in the git repo. Instead, use fastlane to re-generate the
-# screenshots whenever they are needed.
-# For more information about the recommended setup visit:
-# https://docs.fastlane.tools/best-practices/source-control/
 
 */fastlane/report.xml
 */fastlane/Preview.html
