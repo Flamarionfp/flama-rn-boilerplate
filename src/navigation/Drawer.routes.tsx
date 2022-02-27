@@ -16,7 +16,7 @@ const Drawer: React.FC = () => {
       borderTopColor: 'transparent',
       paddingBottom: 6,
     },
-    drawerActiveTintColor: colorScheme === 'light' ? '#f40' : 'white',
+    drawerActiveTintColor: colorScheme === 'light' ? '#218c00' : 'white',
   };
 
   return (

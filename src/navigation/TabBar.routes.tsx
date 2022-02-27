@@ -21,7 +21,7 @@ const TabBar: React.FC = () => {
       borderTopColor: 'transparent',
       paddingBottom: 6,
     },
-    tabBarActiveTintColor: colorScheme === 'light' ? '#f40' : 'white',
+    tabBarActiveTintColor: colorScheme === 'light' ? '#218c00' : 'white',
   };
 
   return (
