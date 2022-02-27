@@ -1,18 +1,14 @@
-import React, { useState, useCallback } from 'react';
+import React from 'react';
 import { Flex, Box, Heading, Button } from 'native-base';
 import { Screen } from '@components/Screen/Screen';
 import { useAuth } from '../../hooks/useAuth';
 
 export const Signin: React.FC = () => {
-  const { signIn } = useAuth();
-  const [isLoading, setIsLoading] = useState(false);
+  const { isLoading, signIn } = useAuth();
 
-  const handleSignin = useCallback(() => {
-    setIsLoading(true);
-    signIn().then(() => {
-      setIsLoading(false);
-    });
-  }, [isLoading]);
+  function handleSignin() {
+    signIn();
+  }
 
   return (
     <Screen>

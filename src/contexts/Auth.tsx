@@ -4,6 +4,7 @@ import api from '../services/api';
 import * as auth from '../services/auth';
 
 interface AuthContextData {
+  isLoading: boolean;
   signed: boolean;
   token: string;
   user: object | null;
@@ -14,6 +15,7 @@ interface AuthContextData {
 const AuthContext = createContext<AuthContextData>({} as AuthContextData);
 
 export const AuthProvider: React.FC = ({ children }) => {
+  const [isLoading, setIsLoading] = useState(false);
   const [user, setUser] = useState<object | null>({});
 
   useEffect(() => {
@@ -30,13 +32,18 @@ export const AuthProvider: React.FC = ({ children }) => {
   }, []);
 
   async function signIn() {
-    const response = await auth.signIn();
-    setUser(response.user);
-
-    api.defaults.headers.Authorization = `Bearer ${response.token}`;
-
-    await AsyncStorage.setItem('@Auth:user', JSON.stringify(response.user));
-    await AsyncStorage.setItem('@Auth:token', response.token);
+    try {
+      setIsLoading(true);
+      const response = await auth.signIn();
+      setUser(response.user);
+      api.defaults.headers.Authorization = `Bearer ${response.token}`;
+      await AsyncStorage.setItem('@Auth:user', JSON.stringify(response.user));
+      await AsyncStorage.setItem('@Auth:token', response.token);
+    } catch (error) {
+      console.log(error);
+    } finally {
+      setIsLoading(false);
+    }
   }
 
   function signOut() {
@@ -46,7 +53,7 @@ export const AuthProvider: React.FC = ({ children }) => {
   }
 
   return (
-    <AuthContext.Provider value={{ signed: !!user, token: '', user, signIn, signOut }}>
+    <AuthContext.Provider value={{ isLoading, signed: !!user, token: '', user, signIn, signOut }}>
       {children}
     </AuthContext.Provider>
   );

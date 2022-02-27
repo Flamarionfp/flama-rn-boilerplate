@@ -8,7 +8,7 @@ const DrawerExample: React.FC = () => {
   return (
     <Screen>
       <Flex flex={1} align="center" justify="center">
-        <Text>Exemplo do menu lateral</Text>
+        <Text fontSize="md">Exemplo do menu lateral</Text>
         <Flex mt="10">
           <Button onPress={() => navigation.navigate('Drawer' as never)}>Ir para o drawer</Button>
         </Flex>
