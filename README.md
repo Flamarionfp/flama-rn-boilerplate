@@ -1,4 +1,4 @@
-# FLAMA RN TEMPLATE
+# FLAMA RN BOILERPLATE
 
 Autor: [Flamarion Fagundes Pinto](https://www.linkedin.com/in/flamarion-fagundes-pinto-0b037b210/)
 
