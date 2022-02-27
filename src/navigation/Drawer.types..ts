@@ -1,5 +1,5 @@
 type DrawerProps = {
-  Home: undefined;
+  DrawerScreen: undefined;
 };
 
 export default DrawerProps;

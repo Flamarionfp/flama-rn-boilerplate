@@ -27,6 +27,16 @@ const ThemeProvider: React.FC<ThemeProviderProps> = ({ children }) => {
           };
         },
       },
+      Text: {
+        defaultProps: {
+          fontSize: 'sm',
+        },
+        baseStyle: () => {
+          return {
+            color: colorScheme === 'light' ? 'black' : 'white',
+          };
+        },
+      },
       Button: {
         variants: {
           solid: {
