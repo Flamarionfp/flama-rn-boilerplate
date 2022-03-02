@@ -1,16 +1,16 @@
-# FLAMA RN TEMPLATE
+# FLAMA RN BOILERPLATE
 
 Autor: [Flamarion Fagundes Pinto](https://www.linkedin.com/in/flamarion-fagundes-pinto-0b037b210/)
 
-[Repositório](https://github.com/Flamarionfp/flama-rn-template)
+[Repositório](https://github.com/Flamarionfp/flama-rn-boilerplate)
 
-<!-- [NPM]() -->
+[NPM](https://www.npmjs.com/package/flama-rn-boilerplate)
 
 Esse boilerplate `react native` trata-se de um projeto `pré configurado`, utilizando `typescript`.
 
 ## Por que usar esse boilerplate?
 
-Todo mundo sabe que criar um bom padrão de projeto é algo que leva tempo e acaba sendo uma tarefa repetitiva em diversos aplicativos. Esse template tem como objetivo trazer uma estrutura `completa e eficaz` para o desenvolvedor sair codando o mais rápido possível.
+Todo mundo sabe que criar um bom padrão de projeto é algo que leva tempo e acaba sendo uma tarefa repetitiva em diversos aplicativos. Esse boilerplate tem como objetivo trazer uma estrutura `completa e eficaz` para o desenvolvedor sair codando o mais rápido possível.
 
 ### Diferenciais:
 
@@ -39,6 +39,6 @@ O projeto vem com:
 
 ### Gostou desse boilerplate?
 
-Contribua em `melhorias` e novas `features` no [GITHUB](https://github.com/Flamarionfp/flama-rn-template)
+Contribua em `melhorias` e novas `features` no [GITHUB](https://github.com/Flamarionfp/flama-rn-boilerplate)
 
 Não esqueça de deixar sua `estrela` 😄
