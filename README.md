@@ -1,10 +1,12 @@
 # FLAMA RN BOILERPLATE
 
+`npx react-native init AppName --template flama-rn-boilerplate`
+
 Autor: [Flamarion Fagundes Pinto](https://www.linkedin.com/in/flamarion-fagundes-pinto-0b037b210/)
 
 [Repositório](https://github.com/Flamarionfp/flama-rn-boilerplate)
 
-[NPM](https://www.npmjs.com/package/flama-rn-boilerplate)
+[NPM](https://www.npmjs.com/package/react-native-template-flama-rn-boilerplate)
 
 Esse boilerplate `react native` trata-se de um projeto `pré configurado`, utilizando `typescript`.
 
